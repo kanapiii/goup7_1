@@ -1,29 +1,33 @@
 import { useEffect, useState } from "react";
 import liff from "@line/liff";
 import "./App.css";
+import {Router, Route, BrowserRouter, Routes } from 'react-router-dom';
+import Home from "./Components/Home";
 
 function App() {
-  const [message, setMessage] = useState("");
-  const [error, setError] = useState("");
+  // const [message, setMessage] = useState("");
+  // const [error, setError] = useState("");
 
-  useEffect(() => {
-    liff
-      .init({
-        liffId: import.meta.env.VITE_LIFF_ID
-      })
-      .then(() => {
-        setMessage("LIFF init succeeded.");
-      })
-      .catch((e) => {
-        setMessage("LIFF init failed.");
-        setError(`${e}`);
-      });
-  });
+  // useEffect(() => {
+  //   liff
+  //     .init({
+  //       liffId: import.meta.env.VITE_LIFF_ID
+  //     })
+  //     .then(() => {
+  //       setMessage("LIFF init succeeded.");
+  //     })
+  //     .catch((e) => {
+  //       setMessage("LIFF init failed.");
+  //       setError(`${e}`);
+  //     });
+  // });
 
   return (
-    <div className="App">
-      <h1>group7チーム</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path={`/`} element={<Home />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
