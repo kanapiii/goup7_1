@@ -9,7 +9,7 @@
 
 4.cd sleepyを叩いてsleepyフォルダに移動してください。
 
-5.『npm run dev』を実行してください。
+5.『npm run dev』を実行してください。(出来ない場合[npm install])
 
 6.そこで、URLがでてくるのでそのリンクをchrome上で実行してください。
 
