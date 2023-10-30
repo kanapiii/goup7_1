@@ -10,3 +10,17 @@
 .p1{
   color :blue
 }
+
+.circle-image-container {
+  width: 100px;  /* これは好みのサイズに変更可能です */
+  height: 100px; /* これは好みのサイズに変更可能です */
+  border-radius: 50%;  /* これにより画像が円形になります */
+  overflow: hidden;  /* これにより画像がコンテナの外にはみ出さないようになります */
+  background-color: #626465;
+}
+
+.circle-image-container img {
+  width: 100%;  /* 画像の幅をコンテナに合わせます */
+  height: 100%; /* 画像の高さをコンテナに合わせます */
+  object-fit: cover; /* 画像のアスペクト比を維持しつつ、コンテナにフィットさせます */
+}
