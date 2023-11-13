@@ -28,10 +28,10 @@ const title="タイトル表示";
         <div className="circle-image-container">
           <img src="画像パス" alt="アイコン" />
         </div>
-        <span className="name">{name}</span>
-        <span className="time">{time}</span>
-        <span className="title">{title}</span>
-        <textarea 
+        <span className="name">{name}   </span>
+        <span className="time">{time}   </span>
+        <span className="title">{title}   </span>1
+        <textarea
           value={post}
           onChange={handlePostChange}
           placeholder="投稿欄"
