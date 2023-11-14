@@ -36,14 +36,23 @@ h1 {
   margin-right: 10px;
 }
 
+.tweet-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 5px; /* Optional: adjust spacing */
+}
+
 .tweet-content {
   text-align: left;
   flex-grow: 1; /* Allow content to take up remaining space */
+  word-wrap: break-word; /* Ensure long words do not overflow */
 }
+
 
 .username {
   font-weight: bold;
-  margin-right: 5px;
+  margin-right: 10px; /* Spacing between username and time */
 }
 
 .tweet-footer {
@@ -51,6 +60,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   font-size: 0.8em;
+  flex-direction: row;
 }
 
 .time {
