@@ -7,6 +7,8 @@ import Board from "./Components/Board";
 import Chishiki from "./Components/Chishiki";
 import Diary from "./Components/Diary";
 import Graph from "./Components/Graph";
+import Morning from "./Components/Morning";
+import Night from "./Components/Night";
 
 function App() {
   // const [message, setMessage] = useState("");
@@ -34,6 +36,8 @@ function App() {
         <Route path={`/Chishiki`} element={<Chishiki />}/>
         <Route path={`/Diary`} element={<Diary />}/>
         <Route path={`/Graph`} element={<Graph />}/>
+        <Route path={`/Morning`} element={<Morning />}/>
+        <Route path={`/Night`} element={<Night />}/>
       </Routes>
     </BrowserRouter>
   );
