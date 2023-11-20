@@ -2,7 +2,73 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h1{
+  text-align: center;
+}
+
+.graph_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* 画面の高さに合わせる場合 */
+}
+
+.btn_area{
+  margin-top: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn1{
+  background-color: white;
+  border-width: 0.1vw;
+  border-radius: 2vw;
+  border-color: #adbbc9;
+  width: 12vw;
+  height: 5vh;
+  font-size: large;
+  margin:2vw;
+  transition: background-color 0.3s; /* 背景色の変更をアニメーション化 */
+}
+
+.btn2{
+  background-color: white;
+  border-width: 0.1vw;
+  border-radius: 2vw;
+  border-color: #adbbc9;
+  width: 12vw;
+  height: 5vh;
+  font-size: large;
+  margin: 2vw;
+}
+
+.btn3{
+  background-color: white;
+  border-width: 0.1vw;
+  border-radius: 2vw;
+  border-color: #adbbc9;
+  width: 12vw;
+  height: 5vh;
+  font-size: large;
+  margin: 2vw;
+}
+
+.btn1.clicked {
+  background-color: rgb(44, 214, 44); /* クリック時の背景色を緑に変更 */
+  color: white;
+}
+
+.btn2.clicked {
+  background-color: rgb(44, 214, 44); /* クリック時の背景色を緑に変更 */
+  color: white;
+}
+
+.btn3.clicked {
+  background-color: rgb(44, 214, 44); /* クリック時の背景色を緑に変更 */
+  color: white;
 }
