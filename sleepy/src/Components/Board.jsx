@@ -44,7 +44,7 @@ function Board() {
           placeholder="メッセージを入力"
         />
         <button onClick={handlePostTweet}>
-          <FaPaperPlane /> {/* Icon for the tweet button */}
+          <FaPaperPlane />
         </button>
       </div>
     </div>

@@ -29,7 +29,7 @@ function Diary() {
         placeholder="日記を書いてね"
       />
       <button onClick={handleSaveEntry}>保存</button>
-      <Link to="/AllDiary">全ての日記を見る</Link> {/* Link to AllDiary */}
+      <Link to="/AllDiary">全ての日記を見る</Link>
     </div>
   );
 }

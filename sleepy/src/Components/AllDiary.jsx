@@ -32,7 +32,7 @@ function AllDiary() {
           ))}
         </ul>
       )}
-      <Link to="/Diary">日記を書く</Link> {/* Link to go back to Diary */}
+      <Link to="/Diary">日記を書く</Link>
     </div>
   );
 }
