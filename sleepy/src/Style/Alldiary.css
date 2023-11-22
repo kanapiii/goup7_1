@@ -1,4 +1,4 @@
-.Diary {
+.Alldiary {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7,19 +7,16 @@
   margin-top: 60px;
 }
 
-.text{
-  width: 50vw;
-  height: 10vh;
+.diary_area{
+  width: 80vw;
+  height: 15vh;
+  background-color:#F0EEEE;
+  border-color: #2c3e50;
+  border-radius: 2vw;
 }
 
-.btn{
-  width: 20vw;
-  height: 4vh;
-  font-size: large;
-  background-color: #6AB8FF;
-  border-radius: 0.5vw;
-  border-color: #6AB8FF;
-  margin-top: 4vh;
+.diary{
+  
 }
 
 .link_area{
