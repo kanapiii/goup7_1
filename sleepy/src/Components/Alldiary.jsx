@@ -1,22 +1,40 @@
-import "../Style/Alldiary.css";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import '../Style/AllDiary.css';
 
+function AllDiary() {
+  const [entries, setEntries] = useState([]);
 
-function Alldiary(){
+  useEffect(() => {
+    const savedEntries = JSON.parse(localStorage.getItem('diaryEntries') || '[]');
+    setEntries(savedEntries);
+  }, []);
+
+  const handleDelete = (indexToDelete) => {
+    const newEntries = entries.filter((_, index) => index !== indexToDelete);
+    setEntries(newEntries);
+    localStorage.setItem('diaryEntries', JSON.stringify(newEntries));
+  };
 
   return (
-    <div className="Alldiary">
-      <h1>今までの日記</h1>
-      <div className="diary_area">
-        <div className="diary">
-          <p>2023-11-17 10:00</p>
-          <p>今日はよく寝むれた</p>
-        </div>
-      </div>
-      <div className="link_area">
-        <a href="./Diary" className="link">戻る</a>
-      </div>
+    <div className="AllDiary">
+      {/* ... */}
+      {entries.length === 0 ? (
+        <p>No diary entries found.</p>
+      ) : (
+        <ul>
+          {entries.map((entry, index) => (
+            <li key={index} className="diary-entry">
+              <div className="entry-date"><strong></strong> {new Date(entry.date).toLocaleString()}</div>
+              <div className="entry-content">{entry.text}</div>
+              <button onClick={() => handleDelete(index)} className="delete-button">削除</button>
+            </li>
+          ))}
+        </ul>
+      )}
+      <Link to="/Diary">日記を書く</Link>
     </div>
   );
-
 }
-export default Alldiary;
+
+export default AllDiary;

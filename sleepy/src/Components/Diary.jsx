@@ -1,22 +1,37 @@
-import "../Style/Diary.css";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // or use useNavigate
+import '../Style/diary.css';
 
+function Diary() {
+  const [entry, setEntry] = useState('');
 
-function Diary(){
+  const handleEntryChange = (event) => {
+    setEntry(event.target.value);
+  };
+
+  const handleSaveEntry = () => {
+    const existingEntries = JSON.parse(localStorage.getItem('diaryEntries') || '[]');
+    const newEntry = {
+      text: entry, // Saving the text of the entry
+      date: new Date().toISOString() // Optionally, save the date of the entry
+    };
+    localStorage.setItem('diaryEntries', JSON.stringify([...existingEntries, newEntry]));
+    alert('日記を保存しました！');
+    setEntry(''); // Clear the textarea after saving
+  };
+  
 
   return (
     <div className="Diary">
-      <h1>今日の日記</h1>
-      <div className="diary_area">
-        <input type="text" className="text" placeholder="寝る前・起きたときの気持ちを書いてください"/>
-      </div>
-      <div className="btn_area">
-        <button className="btn">送信</button>
-      </div>
-      <div className="link_area">
-        <a href="./Alldiary" className="link">今までの日記</a>
-      </div>
+      <textarea
+        value={entry}
+        onChange={handleEntryChange}
+        placeholder="日記を書いてね"
+      />
+      <button onClick={handleSaveEntry}>保存</button>
+      <Link to="/AllDiary">全ての日記を見る</Link>
     </div>
   );
-
 }
+
 export default Diary;

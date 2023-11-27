@@ -1,29 +1,63 @@
-.Alldiary {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.AllDiary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-.diary_area{
-  width: 80vw;
-  height: 15vh;
-  background-color:#F0EEEE;
-  border-color: #2c3e50;
-  border-radius: 2vw;
+.AllDiary h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
 }
 
-.diary{
-  
+.AllDiary ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
 }
 
-.link_area{
-  margin-top: 3vh;
+.AllDiary li {
+  background-color: #f9f9f9;
+  border: 0.5px solid rgb(64, 64, 64);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+  word-break: break-word;
+  text-align: center; /* Center-align the text */
 }
 
-.link{
-  color: #6B83FF;
-  
+.entry-content {
+  margin-bottom: 10px;
+}
+.entry-date {
+  text-align: left; /* 左寄せに */
+  font-size: 0.75rem; /* 文字サイズを小さく */
+}
+
+.entry-content {
+  text-align: center; /* メッセージは中央揃えのまま */
+  /* 他のスタイルはそのまま */
+}
+
+.delete-button {
+  background-color: transparent; /* 背景を透明に */
+  color: #282828; /* 目立たない色 */
+  border: none; /* 枠線なし */
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 1; /* やや透明 */
+}
+
+.delete-button:hover {
+  background-color: transparent; /* ホバー時も背景を透明に保つ */
+  color: #999; /* ホバー時も同じ色を保つ */
+  opacity: 2; /* ホバー時は少し不透明度を上げる（オプション） */
 }
