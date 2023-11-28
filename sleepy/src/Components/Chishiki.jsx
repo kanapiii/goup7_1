@@ -10,7 +10,7 @@ function Chishiki() {
         <Box
           component="form"
           sx={{
-            "& .MuiTextField-root": { m: 1, width: "70ch" }
+            "& .MuiTextField-root": { m: 1, width: "70ch"}
           }}
           noValidate
           autoComplete="off"
@@ -21,7 +21,7 @@ function Chishiki() {
               label=""
               multiline
               rows={4}
-              defaultValue=""
+              defaultValue="aa"
               InputProps={{ readOnly: true }}
             />
           </div>
