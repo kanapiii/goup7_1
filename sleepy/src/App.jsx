@@ -9,6 +9,7 @@ import Diary from "./Components/Diary";
 import Graph from "./Components/Graph";
 import Morning from "./Components/Morning";
 import Night from "./Components/Night";
+import Alldiary from "./Components/Alldiary";
 
 function App() {
   // const [message, setMessage] = useState("");
@@ -38,6 +39,7 @@ function App() {
         <Route path={`/Graph`} element={<Graph />}/>
         <Route path={`/Morning`} element={<Morning />}/>
         <Route path={`/Night`} element={<Night />}/>
+        <Route path={`/Alldiary`} element={<Alldiary />} />
       </Routes>
     </BrowserRouter>
   );
