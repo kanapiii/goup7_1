@@ -65,16 +65,12 @@ h1{
   margin:0;
   margin-top: 50px;
   margin-bottom: 60px;
+  text-align: center;
 }
 .Board {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #2c3e50;
-}
-.box_area{
-  height: 1200px;
-  width: 800px;
-  overflow-y: scroll;
 }
 
 .box{
@@ -83,5 +79,6 @@ h1{
  border: 1px solid #f1f3f5;
  border-radius: 8px;
  margin-top: 30px;
- text-align: center;
+ height: 20vh;
+  width: 90vw;
 }

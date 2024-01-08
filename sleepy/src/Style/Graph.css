@@ -16,8 +16,8 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  width: 800px;
+  height: 40vh;
+  width: 90vw;
 }
 
 .btn_area{
@@ -32,7 +32,7 @@ h1{
   border-width: 0.1vw;
   border-radius: 2vw;
   border-color: #adbbc9;
-  width: 12vw;
+  width: 13vw;
   height: 5vh;
   font-size: large;
   margin:2vw;
@@ -43,7 +43,7 @@ h1{
   border-width: 0.1vw;
   border-radius: 2vw;
   border-color: #adbbc9;
-  width: 12vw;
+  width: 13vw;
   height: 5vh;
   font-size: large;
   margin: 2vw;
@@ -54,7 +54,7 @@ h1{
   border-width: 0.1vw;
   border-radius: 2vw;
   border-color: #adbbc9;
-  width: 12vw;
+  width: 13vw;
   height: 5vh;
   font-size: large;
   margin: 2vw;

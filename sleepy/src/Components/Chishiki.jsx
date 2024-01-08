@@ -50,7 +50,7 @@ function Chishiki() {
         <div className="box_area">
           {/* 配列の要素をマップしてboxを作成 */}
           {randomItems.map((item, index) => (
-            <div className="box" key={index}>
+            <div className="box1" key={index}>
               <p>{item}</p>
             </div>
           ))}

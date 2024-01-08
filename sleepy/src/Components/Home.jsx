@@ -1,6 +1,7 @@
 import "../Style/Home.css";
 import { useEffect, useState } from "react";
 import liff from "@line/liff";
+import { Link } from "react-router-dom";
 
 function Home(){
 
@@ -24,6 +25,18 @@ function Home(){
   return (
     <div className="Home">
       <h1>group7チーム</h1>
+      <Link to="/Board">
+        <button>Board</button>
+      </Link>
+      <Link to="/Chishiki">
+        <button>Chishiki</button>
+      </Link>
+      <Link to="/Diary">
+        <button>Diary</button>
+      </Link>
+      <Link to="/Graph">
+        <button>Graph</button>
+      </Link>
     </div>
   );
 
