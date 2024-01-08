@@ -8,14 +8,16 @@
 }
 
 h1{
-  text-align: center;
+  margin:0;
+  margin-top: 50px;
 }
 
 .graph_area{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh; /* 画面の高さに合わせる場合 */
+  height: 500px;
+  width: 800px;
 }
 
 .btn_area{
@@ -26,7 +28,7 @@ h1{
 }
 
 .btn1{
-  background-color: white;
+  background-color: #a4caf1;
   border-width: 0.1vw;
   border-radius: 2vw;
   border-color: #adbbc9;
@@ -34,11 +36,10 @@ h1{
   height: 5vh;
   font-size: large;
   margin:2vw;
-  transition: background-color 0.3s; /* 背景色の変更をアニメーション化 */
 }
 
 .btn2{
-  background-color: white;
+  background-color: #a4caf1;
   border-width: 0.1vw;
   border-radius: 2vw;
   border-color: #adbbc9;
@@ -49,7 +50,7 @@ h1{
 }
 
 .btn3{
-  background-color: white;
+  background-color: #a4caf1;
   border-width: 0.1vw;
   border-radius: 2vw;
   border-color: #adbbc9;
@@ -57,19 +58,4 @@ h1{
   height: 5vh;
   font-size: large;
   margin: 2vw;
-}
-
-.btn1.clicked {
-  background-color: rgb(44, 214, 44); /* クリック時の背景色を緑に変更 */
-  color: white;
-}
-
-.btn2.clicked {
-  background-color: rgb(44, 214, 44); /* クリック時の背景色を緑に変更 */
-  color: white;
-}
-
-.btn3.clicked {
-  background-color: rgb(44, 214, 44); /* クリック時の背景色を緑に変更 */
-  color: white;
 }

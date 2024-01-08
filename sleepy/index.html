@@ -8,6 +8,28 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx">
+      const liffId = '2000767035-GYbJRxv6'
+        liff.init({
+            liffId: liffId,
+            withLoginOnExternalBrowser: true,
+        }).then(() => {
+            getProfile()
+            console.log("ok");
+        }).catch((err) => {
+            alert(err)
+        })
+
+        function getProfile(){
+            liff.getProfile()
+            .then((profile) => {
+                post_Ajax({"userId": profile.userId},"ajax_get.php");
+                console.log(profile.userId);
+            })
+            .catch((err) => {
+                alert(err)
+            });
+        }
+    </script>
   </body>
 </html>

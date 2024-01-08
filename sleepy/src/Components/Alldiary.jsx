@@ -32,7 +32,7 @@ function AllDiary() {
           ))}
         </ul>
       )}
-      <Link to="/Diary">日記を書く</Link>
+      <Link to="/Diary">戻る</Link>
     </div>
   );
 }

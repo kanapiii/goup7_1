@@ -23,13 +23,14 @@ function Diary() {
 
   return (
     <div className="Diary">
+      <h1>日記</h1>
       <textarea
         value={entry}
         onChange={handleEntryChange}
         placeholder="日記を書いてね"
       />
       <button onClick={handleSaveEntry}>保存</button>
-      <Link to="/AllDiary">全ての日記を見る</Link>
+      <Link to="/AllDiary" className='alldiary'>全ての日記を見る</Link>
     </div>
   );
 }

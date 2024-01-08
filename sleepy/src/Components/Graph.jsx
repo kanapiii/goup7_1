@@ -1,17 +1,3 @@
-// import "../Style/Graph.css";
-
-
-// function Graph(){
-
-//   return (
-//     <div className="Graph">
-//       <h1>グラフ画面</h1>
-//     </div>
-//   );
-
-// }
-// export default Graph;
-
 import "../Style/Graph.css";
 import React from "react";
 import {
@@ -32,7 +18,6 @@ function Graph(){
     CategoryScale,
     LinearScale,
     BarElement,
-    Title,
     Tooltip,
     Legend
   );
@@ -43,10 +28,6 @@ function Graph(){
     plugins: {
       legend: {
         position: "top"
-      },
-      title: {
-        display: true,
-        text: "睡眠時間グラフ"
       }
     }
   };
@@ -71,10 +52,6 @@ const data = {
   plugins: {
     legend: {
       position: "top"
-    },
-    title: {
-      display: true,
-      text: "睡眠時間グラフ"
     }
   }
 };
@@ -99,10 +76,6 @@ const options3 = {
   plugins: {
     legend: {
       position: "top"
-    },
-    title: {
-      display: true,
-      text: "睡眠時間グラフ"
     }
   }
 };
@@ -150,7 +123,7 @@ const handleBtn3Click = () => {
 
   return (
     <div className="Graph">
-      <h1>グラフ画面</h1>
+      <h1>グラフ</h1>
       <div className="graph_area">
       {selectedOption === 'options1' && <Bar options={options1} data={data} />}
         {selectedOption === 'options2' && <Bar options={options2} data={data_2} />}
